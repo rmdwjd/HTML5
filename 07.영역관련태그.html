@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영역관련태그</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .red{
+            background-color : red;
+        }
+        .orange{
+            background-color : orange;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        span{
+            border : 1px dotted black;
+            /* 
+                width: 200px;
+                height: 200px; 
+                - 인라인 요소에선 대부분 가로, 세로길이 지정 불가
+            */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        블럭요소 : 한 줄 단위로 영역 차지
+        줄바꿈이 적용되어 이미 존재하는 태그의 다음줄에 영역이 잡힘
+        (p, pre, div ...)
+
+        인라인요소 : content(내용)영역에 해당하는 부분만 영역차지
+                    줄바꿈이 적용되지 않아 옆으로 잡힘
+                    (b, mark, img, span ...)
+     -->
+     <h1>영역 관련 태그</h1>
+     <h2>div태그와 span태그의 차이점 1 : 줄바꿈 적용</h2>
+     <h3>div 태그</h3>
+     <div class = "red">첫번째 영역</div>
+     <div class="orange">두번째 영역</div>
+     <div class="yellow">세번째 영역</div>
+
+     <h3>span 태그</h3>
+     <p>span 태그는 인라인 요소로 content 영역만 차지</p>
+     <span class="red">첫번째 span 영역</span>
+     <span class="orange">두번째 span 영역</span>
+     <span class="yellow">세번째 span 영역</span>
+     <br><br>
+     <hr>
+     <h2>div 태그와 span 태그의 차이점 2 : 영역 지정 방식</h2>
+     <h3>div 태그 : 사각형 박스로 영역을 지정</h3>
+     <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, ad maxime porro ipsam sed accusantium sequi? Perferendis numquam similique, iure voluptas magnam distinctio, nobis modi accusantium, alias quis esse vero?
+     </div>
+     <h3>span 태그 : 문단 단위로 영역 지정</h3>
+     <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati debitis distinctio assumenda minus aperiam eum odio consequatur asperiores molestias beatae similique tempora, vel nostrum veniam illo deleniti quas quod! In.
+        Error ut mollitia sapiente, deleniti distinctio eaque nemo dolorem deserunt tempora veniam. Dolorem possimus sunt, obcaecati nulla minima reiciendis natus porro totam dolor magnam velit quod saepe quidem facilis nemo.
+    </span>
+
+    <h1>ifame</h1>
+    <p>웹 문서 안에 다른 웹페이지를 추가하는 태그 (인라인요소)</p>
+    <iframe src="06.멀티미디어관련태그.html" width="1200" height="600" frameborder="1"></iframe>
+    <br><br><br>
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/B9hfG0deLBE" title="[#모았동물농장] 🐱어이 인간! 날 키우도록 해라!🫵 뻔뻔하고 귀여운 집사 간택하는 길냥이들 모음집🐱 #TV동물농장 #AnimalFarm #SBSstory" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
